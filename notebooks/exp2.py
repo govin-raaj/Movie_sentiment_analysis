@@ -19,6 +19,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import scipy.sparse
+from src.constants import MLFLOW_TRACKING_URI
 
 import warnings
 warnings.simplefilter("ignore", UserWarning)
@@ -28,14 +29,13 @@ warnings.filterwarnings("ignore")
 CONFIG = {
     "data_path": "notebooks/data.csv",
     "test_size": 0.2,
-    "mlflow_tracking_uri": "your_tracking-uri",
-    "dagshub_repo_owner": "name",
+    "dagshub_repo_owner": "govin-raaj",
     "dagshub_repo_name": "Movie_sentiment_analysis",
     "experiment_name": "Bow vs TfIdf"
 }
 
 # ========================== SETUP MLflow & DAGSHUB ==========================
-mlflow.set_tracking_uri(CONFIG["mlflow_tracking_uri"])
+mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
 dagshub.init(repo_owner=CONFIG["dagshub_repo_owner"], repo_name=CONFIG["dagshub_repo_name"], mlflow=True)
 mlflow.set_experiment(CONFIG["experiment_name"])
 
