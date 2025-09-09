@@ -1,6 +1,8 @@
 s3_local/
 data/
 models/
+!src/data/*.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
