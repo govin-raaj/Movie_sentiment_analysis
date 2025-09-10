@@ -2,6 +2,8 @@ s3_local/
 data/
 models/
 !src/data/*.py
+reports/experiment_info.json
+reports/metrics.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
