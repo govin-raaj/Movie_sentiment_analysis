@@ -12,10 +12,9 @@ warnings.simplefilter("ignore", UserWarning)
 warnings.filterwarnings("ignore")
 
 
-# -------------------------------------------------------------------------------------
-mlflow.set_tracking_uri('https://dagshub.com/vikashdas770/YT-Capstone-Project.mlflow')
-dagshub.init(repo_owner='vikashdas770', repo_name='YT-Capstone-Project', mlflow=True)
-# -------------------------------------------------------------------------------------
+
+mlflow.set_tracking_uri('https://dagshub.com/govin-raaj/Movie_sentiment_analysis.mlflow')
+dagshub.init(repo_owner='govin-raaj', repo_name='Movie_sentiment_analysis', mlflow=True)
 
 
 def load_model_info(file_path: str) -> dict:
