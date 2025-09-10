@@ -14,7 +14,7 @@ from src.constants import MLFLOW_TRACKING_URI
 
 
 
-mlflow.set_tracking_uri("https://dagshub.com/govin-raaj/Movie_sentiment_analysis.mlflow")
+mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
 dagshub.init(repo_owner='govin-raaj', repo_name='Movie_sentiment_analysis', mlflow=True)
 
 
