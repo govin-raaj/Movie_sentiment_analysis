@@ -67,6 +67,7 @@ def normalize_text(text):
 
     return text
 
+
 # Below code block is for local use
 # -------------------------------------------------------------------------------------
 # mlflow.set_tracking_uri()
