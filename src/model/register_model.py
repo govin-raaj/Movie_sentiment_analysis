@@ -10,10 +10,10 @@ import dagshub
 import warnings
 warnings.simplefilter("ignore", UserWarning)
 warnings.filterwarnings("ignore")
+from src.constants import MLFLOW_TRACKING_URI
 
 
-
-# mlflow.set_tracking_uri('')
+# mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
 # dagshub.init(repo_owner='govin-raaj', repo_name='Movie_sentiment_analysis', mlflow=True)
 
 
