@@ -1,6 +1,7 @@
 s3_local/
 data/
-models/
+models/model.pkl
+models/vectorizer.pkl
 !src/data/*.py
 reports/experiment_info.json
 reports/metrics.json
