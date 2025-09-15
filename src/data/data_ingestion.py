@@ -76,7 +76,7 @@ def main():
         test_size = params['data_ingestion']['test_size']
         # test_size = 0.2
         
-        df = load_data(data_url='https://raw.githubusercontent.com/govin-raaj/Movie_sentiment_analysis/refs/heads/main/notebooks/data.csv')
+        df = load_data(data_url='https://raw.githubusercontent.com/govin-raaj/Movie_sentiment_analysis/refs/heads/main/notebooks/IMDB.csv')
         # s3 = s3_connection.s3_operations("moviesentanalydata", AWS_ACCESS_KEY, AWS_SECRET_KEY)
         # df = s3.fetch_file_from_s3("data.csv")
 
