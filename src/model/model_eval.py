@@ -13,10 +13,11 @@ from src.constants import MLFLOW_TRACKING_URI
 
 
 
-
-# mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
+# # local usage
+# mlflow.set_tracking_uri()
 # dagshub.init(repo_owner='govin-raaj', repo_name='Movie_sentiment_analysis', mlflow=True)
 
+#production code
 dagshub_token = os.getenv("CAPSTONE_TEST")
 if not dagshub_token:
     raise EnvironmentError("CAPSTONE_TEST environment variable is not set")
